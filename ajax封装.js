@@ -20,7 +20,7 @@
       }
       xhr.onreadystatechange = function(){
           if(xhr.readyState ===4 && xhr.statys ===200){
-              console.log(xhr.responseText);
+              option.callback(xhr.responseText);
           }
       }
   }
